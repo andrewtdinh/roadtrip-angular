@@ -1,20 +1,20 @@
 h3 Trip name: &nbsp;{{trip.name}}
 
 .row
-  .col-xs-8
+  .col-md-8
     #map
-  .col-xs-4
+  .col-md-4
     .row
-      .col-xs-8
+      .col-md-8
         form(name='stopForm', novalidate)
           .form-group
             label(for='name') Add a stop destination
             input.form-control#name(type='text', name='name', ng-model='stop.name')
-      .col-xs-4
+      .col-md-4
           .form-group
             button#addStop.btn.btn-success(type='submit', ng-click='create(stop)') Add Stop
     .row
-      .col-xs-12
+      .col-md-12
         table.table.table-striped
           thead
             tr
