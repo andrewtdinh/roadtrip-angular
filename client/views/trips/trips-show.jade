@@ -1,4 +1,4 @@
-h3 {{trip.name}}
+h3 Trip name: &nbsp;{{trip.name}}
 
 .row
   .col-xs-6
@@ -8,7 +8,7 @@ h3 {{trip.name}}
       .col-xs-6
         form(name='stopForm', novalidate)
           .form-group
-            label(for='name') Name
+            label(for='name') Add a stop destination
             input.form-control#name(type='text', name='name', ng-model='stop.name')
           .form-group
             button.btn.btn-default(type='submit', ng-click='create(stop)') Add Stop
