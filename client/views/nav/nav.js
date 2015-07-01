@@ -31,6 +31,12 @@ angular.module('roadtrip')
         return data.password.email;
       case 'twitter':
         return data.twitter.username;
+      case 'google':
+        return data.google.displayName;
+      case 'facebook':
+        return data.facebook.displayName;
+      case 'github':
+        return data.github.displayName;
     }
   }
 });
