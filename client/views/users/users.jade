@@ -10,9 +10,9 @@ h3 {{name | uppercase}}
         label(for='password') Password
         input.form-control#password(type='password', name='password', ng-model='user.password')
       .form-group
-        button.btn.btn-default(type='submit', ng-click='submit(user)') Submit
+        button.btn.btn-default(type='submit', ng-click='submit(user)') Email Login
         button.btn#twitterBtn(ng-click='oauth("twitter")'): i.fa.fa-twitter
-        button.btn.btn-danger(ng-click='oauth("google")'): i.fa.fa-google
-        button.btn.btn-warning(ng-click='oauth("github")'): i.fa.fa-github
-        button#facebook.btn.btn-info(ng-click='oauth("facebook")'): i.fa.fa-facebook-official
+        button.btn#googleBtn(ng-click='oauth("google")'): i.fa.fa-google-plus
+        button.btn#githubBtn(ng-click='oauth("github")'): i.fa.fa-github
+        button.btn#facebookBtn(ng-click='oauth("facebook")'): i.fa.fa-facebook-official
   .col-md-8
