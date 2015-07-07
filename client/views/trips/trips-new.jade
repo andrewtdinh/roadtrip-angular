@@ -4,10 +4,10 @@ h3 NEW TRIP
   .col-md-4
     form(name='tripForm', novalidate)
       .form-group
-        label(for='name') Name
+        label(for='name') Trip Name
         input.form-control#name(type='text', name='name', ng-model='trip.name')
       .form-group
-        label(for='departure') Departure
+        label(for='departure') Departure Date
         input.form-control#departure(type='date', name='departure', ng-model='trip.departure')
       .form-group
         button.btn.btn-success(type='submit', ng-click='create(trip)') Create Trip
